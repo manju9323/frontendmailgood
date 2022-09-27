@@ -1,0 +1,9 @@
+.gmail{
+    display:flex;
+    flex-direction: column;
+  
+}
+.gmailbody{
+    display: flex;
+    height:91vh;
+}

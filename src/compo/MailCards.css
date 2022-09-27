@@ -1,0 +1,78 @@
+.mailcards{
+   display: flex;
+flex-direction: column;
+width:100%;
+background-color: #fff;
+flex:0.1;
+align-self: center;
+}
+.accordleft{
+    display: flex;
+    align-items:center ;
+}
+.accordleft >.MuiSvgIcon-root{
+   margin-left:5px ;
+   color:rgb(219, 199, 199)
+}
+.MuiSvgIcon-root{
+    margin-left:5px ;
+    color:rgb(221, 208, 208)
+ }
+
+ .accordleft{
+    display: flex;
+    align-items: center;
+ }
+ .accordmid{
+    display: flex;
+    align-items: center;
+    width:100%;
+    background-color: rgb(150, 156, 128);
+    justify-content: space-between;
+    align-items: center;
+ }
+ .accordmain{
+    display: flex;
+    flex-direction: column;
+ }
+ .MuiPaper-root{
+    color:black;
+    border-bottom: 1px solid #aaa;
+    background-color: rgb(20, 20, 20);
+    opacity:0.8;
+ }
+ .tempmailspace{
+    margin-left: 10px;
+ }
+ .mailreplylink{
+border:2px solid blue;
+margin-left:3px;  
+background-color: blue; 
+display: flex;
+align-items: center;
+border-radius: 5px;
+font-size: larger;
+font: weight 400px;;
+padding-right: 10px;
+
+ }
+ .mailreplylinks{
+ display: flex;
+     }
+.a{ color: aliceblue;
+text-decoration: none;}
+
+.sendinfo{
+    display: flex;
+    flex-direction: column;
+}
+.h4{
+    font-size: larger;
+    font-weight: bold;
+}
+.sm{
+    font-weight:10px;
+}
+.mailcontentin{
+   color:black
+}

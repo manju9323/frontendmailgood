@@ -1,0 +1,65 @@
+.mail{
+display: flex;
+flex-direction: column;
+padding:5px 10px;
+flex:0.92;
+border-right: 2px solid rgba(98,98,98);
+
+}
+.mailtop1{
+display:flex;
+align-items:center;
+justify-content: space-between;
+width:100%;
+height: 50px;
+background-color: rgba(0,0,0);
+}
+.mailleft > .MuiSvgIcon-root{
+margin-left: 10px;
+color:rgba(255,255,255,0.643)
+}
+.mailright{
+    display: flex;
+}
+.mailright > .MuiSvgIcon-root{
+    margin-left: 10px;
+    color:rgba(255,255,255,0.643)
+}
+.cbox{
+    margin-top: -15px |important;
+}
+
+.mailtop2{
+display: flex;
+background-color: #333;
+border-bottom: 1px solid rgb(148, 192, 190);
+justify-content:space-around;
+width:100%;
+height: 50px;
+}
+.mailtop2icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5px;
+    color: aliceblue;
+}
+.mailtop2icon:hover{
+background-color: #444;
+}
+.mailtop2icon >h5{
+   color:#ccc;
+ font-size: 15px;
+ margin-left: 10px;
+    }
+    .mailtop2icon >.MuiSvgIcon-root{
+        color:rgba(255,255,255,0.643)
+    }
+.mainmail{
+overflow: scroll;
+-ms-overflow-style: none;
+
+}
+.mainmail::-webkit-scrollbar{
+display: none;
+}
