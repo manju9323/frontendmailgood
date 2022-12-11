@@ -49,14 +49,14 @@ let fast=async()=>{
   if (email !==""){
 await axios.post(urls,{email,subject,message},{headers:{'mm':`${JSON.parse(localStorage.getItem("mm"))}`}})
 .then(res=>{
-  toast.success(`${res.data}`,{
+  toast.success(`${"send sucessfully"}`,{
     position:toast.POSITION.TOP_CENTER
   })
  
 }
 )
 .catch(
-  err=>{toast.error(err.response.data.err)}
+  err=>{toast.error("err please fill all inputs")}
 )}
 }
 //----------------------------------------
@@ -99,30 +99,6 @@ border:"none",
     <div onClick={()=>setfocus(true)} className="modalrecipt">
     <p>{focus?"To":"Recipients"}</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
     <input  onChange={(e)=>setemail(e.target.value)}
     type="text" placeholder='To' 
     />
@@ -163,10 +139,11 @@ border:"none",
   <div className='sidebaroptionicon'><TimerIcon/></div>
   <div className='sidebaroptionicon'><SendIcon/></div>
   <div className='sidebaroptionicon'><DraftsIcon/></div>
-
-<LabelImportantIcon/><ScheduleSendIcon/><EmailIcon/><ErrorOutlineIcon/><DeleteIcon/><CategoryIcon/><SettingsIcon/><AddIcon/>
-
-
+  <div className='sidebaroptionicon'><EmailIcon /></div>
+  <div className='sidebaroptionicon'><ErrorOutlineIcon/></div>
+  <div className='sidebaroptionicon'><DeleteIcon/></div>
+  <div className='sidebaroptionicon'><SettingsIcon/></div>
+  <div className='sidebaroptionicon'><AddIcon/></div>
 
 </div>
 </div>

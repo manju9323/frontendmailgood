@@ -19,9 +19,6 @@ function Header(props) {
     }
 
 
-
-
-
   return (
     <div className='header'> 
     <div className='header_left'>

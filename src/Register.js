@@ -34,6 +34,7 @@ function Register(props) {
   await axios.post("https://gmailapp.onrender.com/api/auth/register",value)
   
   .then(res=>{
+    console.log(res)
     toast.success("sucessfully registered!",{
       position:toast.POSITION.TOP_CENTER
     })

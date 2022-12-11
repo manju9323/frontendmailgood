@@ -16,7 +16,8 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Reply from '@mui/icons-material/Reply';
 import Forward from '@mui/icons-material/Forward';
 import CloseIcon from '@mui/icons-material/Close';
-import Modal from 'react-modal'
+import Modal from 'react-modal';
+import { format } from 'timeago.js';
 //import CreateIcon from '@mui/icons-material/Create';
 //
 import FormatColorTextIcon from '@mui/icons-material/FormatColorText';
@@ -114,8 +115,8 @@ getdata()
               </div>
             </div>
             <Typography> <div className='sendinfo'>
-              <div className='h4'>{dat.email}<small className='sm' >{dat.email} </small></div>
-              <small className='tempmailspace'>{dat.email}</small>
+              <div className='h4'><small className='sm' >{dat.email} </small></div>
+              <small className='tempmailspace'></small>
               
               </div></Typography>
             </div>
@@ -124,7 +125,7 @@ getdata()
             </div>
             <div className="accordmiddate">
             <Typography><div className='senderinfodateoption'>
-                <small>{dat.createdAt}</small>
+                <small>{format(dat.createdAt)}</small>
                 <MoreVertIcon/>
                 <LocalPrintshopIcon/>
             <LaunchIcon/>
